@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {{#if loggedIn}}
+      <div style="width: 100%; text-align: right">
+        <a href="/users/logout">Logout</a>
+      </div>
+    {{/if}}
+    {{{ body }}}
+  </body>
+</html>

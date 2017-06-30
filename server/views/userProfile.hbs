@@ -1,0 +1,22 @@
+<h1>GA Hub</h1>
+<a href='/users/profiles'>Home</a>
+
+<h2>{{name}}</h2>
+<p> Hometown: {{hometown}}</p>
+<p> Favorite Food: {{food}}</p>
+<p> Favorie Movie: {{movie}}</p>
+<p> Favorite Book: {{book}}</p>
+<p> Favorite Music Genre: {{music}}</p>
+<p> Coding Skills: {{skills}}</p>
+
+<form action="/notes" method="POST">
+  <input name="text" placeholder="Type your note here"/>
+  <input name="profileId" value="{{id}}" />
+  <button>Submit</button>
+</form>
+
+<ol>
+{{#each notes}}
+  <li>{{this.text}}</li>
+{{/each}}
+</ol>
